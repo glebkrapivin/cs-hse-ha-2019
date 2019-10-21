@@ -3,7 +3,7 @@
 
 HEADER="""# hse_python_course_ha
 
-Solutions to HSE CS Python course Home Assignments
+Solutions to HSE CS Python course Home Assignments \n
 
 """
 
@@ -16,7 +16,7 @@ for filename in ./HA*/*.ipynb; do
 
 done
 
-echo $HEADER >> README.md
+echo $HEADER > README.md
 
 
 git add . 
