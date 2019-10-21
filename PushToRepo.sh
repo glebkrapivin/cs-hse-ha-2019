@@ -15,9 +15,8 @@ bash PushToRepo.sh \n
 for filename in ./HA*/*.ipynb; do
 	file=${filename##*/}
 	file=${file%%\.*}
-	LAST_UPDATE=date -r filename "+%m-%d-%Y %H:%M:%S"
-
-	NEW_PART="* [$file (nbviewer)](https://nbviewer.jupyter.org/github/glebkrapivin/hse_python_course_ha/blob/master/$filename). Last Update - $LAST_UPDATE \n"
+	LAST_UPDATE=$(date -r $filename "+%Y-%m-%d %H:%M:%S")
+	NEW_PART="[$file (nbviewer)](https://nbviewer.jupyter.org/github/glebkrapivin/hse_python_course_ha/blob/master/$filename). Last Update - $LAST_UPDATE \n"
 	HEADER="$HEADER $NEW_PART"
 
 done
