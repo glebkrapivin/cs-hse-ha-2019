@@ -5,6 +5,9 @@ HEADER="""# hse_python_course_ha \n
 
 Solutions to HSE CS Python course Home Assignments \n
 
+In order to push the changes to the repository and generate README file with links (from .ipynb files) to nbviewer run \n
+```bash PushToRepo.sh```
+
 """
 
 for filename in ./HA*/*.ipynb; do
